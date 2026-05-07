@@ -1,0 +1,15 @@
+[
+  "function deposit(uint256 amount, uint256 minShares) external",
+  "function withdraw(uint256 shares) external",
+  "function sharePrice() public view returns (uint256)",
+  "function totalAssets() public view returns (uint256)",
+  "function getUserPosition(address user) external view returns (uint256)",
+  "function getStrategyAPYs() external view returns (uint256 apyA, uint256 apyB)",
+  "function underlying() public view returns (address)",
+  "function shareToken() public view returns (address)",
+  "function targetBufferBps() public view returns (uint256)",
+  "event Deposit(address indexed user, uint256 amount, uint256 shares)",
+  "event Withdraw(address indexed user, uint256 amount, uint256 shares)",
+  "event Rebalance(uint256 stratAAssets, uint256 stratBAssets)",
+  "event EmergencyWithdraw()"
+]

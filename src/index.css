@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-black: #0B0F14;
+  --color-space-card: #121821;
+  --color-gold-liquid: #F5C84C;
+  --color-gold-dark: #D4A017;
+  --color-text-main: #EAEAEA;
+  --color-text-muted: #9AA4B2;
+}
+
+@layer base {
+  body {
+    @apply bg-space-black text-text-main font-sans antialiased;
+  }
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(245, 200, 76, 0.15);
+}
+
+.gold-text-glow {
+  text-shadow: 0 0 10px rgba(245, 200, 76, 0.3);
+}
+
+.glass-card {
+  @apply bg-space-card border border-white/5 rounded-2xl backdrop-blur-sm;
+}

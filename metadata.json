@@ -1,0 +1,6 @@
+{
+  "name": "LiteYield",
+  "description": "Yield infrastructure protocol for LitVM, offering stable LTC yield through automated strategy allocation and shares-based accounting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
