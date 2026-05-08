@@ -76,6 +76,10 @@ export default function App() {
     ? "text-gray-400"
     : "text-gray-600";
 
+  const footerText = darkMode
+    ? "text-white"
+    : "text-black";
+
   return (
     <div className={`min-h-screen pb-20 transition-all duration-300 ${bgClass}`}>
 
@@ -88,17 +92,6 @@ export default function App() {
       />
 
       <main className="max-w-7xl mx-auto px-6 pt-32 flex flex-col gap-10">
-
-        {/* THEME BUTTON */}
-        <div className="flex justify-end">
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gold-liquid text-black font-bold hover:scale-[1.02] transition-all"
-          >
-            {darkMode ? <Sun size={16} /> : <Moon size={16} />}
-            {darkMode ? 'Light Mode' : 'Dark Mode'}
-          </button>
-        </div>
 
         {/* CONFIG WARNING */}
         {!isConfigured && (
@@ -307,25 +300,38 @@ export default function App() {
               LiteYield Protocol © 2026
             </div>
 
-            <div className="flex gap-6 text-sm">
+            <div className={`flex items-center gap-6 text-sm ${footerText}`}>
+
+              {/* THEME TOGGLE */}
+              <button
+                onClick={() => setDarkMode(!darkMode)}
+                className="hover:text-gold-liquid transition"
+                aria-label="Toggle Theme"
+              >
+                {darkMode ? (
+                  <Sun size={18} />
+                ) : (
+                  <Moon size={18} />
+                )}
+              </button>
 
               <a
-  href="https://x.com/LiteYield"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:text-gold-liquid transition"
->
-  X
-</a>
+                href="https://x.com/LiteYield"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold-liquid transition"
+              >
+                X
+              </a>
 
-<a
-  href="https://x.com/litecoinvm"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:text-gold-liquid transition"
->
-  LitVM
-</a>
+              <a
+                href="https://x.com/litecoinvm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold-liquid transition"
+              >
+                LitVM
+              </a>
 
             </div>
 
