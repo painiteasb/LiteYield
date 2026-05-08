@@ -310,20 +310,22 @@ export default function App() {
             <div className="flex gap-6 text-sm">
 
               <a
-                href="https://x.com/painite_asb?s=21"
-                target="_blank"
-                className="hover:text-gold-liquid transition"
-              >
-                Builder X
-              </a>
+  href="https://x.com/LiteYield"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-gold-liquid transition"
+>
+  X
+</a>
 
-              <a
-                href="https://x.com/litecoinvm?s=21"
-                target="_blank"
-                className="hover:text-gold-liquid transition"
-              >
-                LitVM X
-              </a>
+<a
+  href="https://x.com/litecoinvm"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-gold-liquid transition"
+>
+  LitVM
+</a>
 
             </div>
 
